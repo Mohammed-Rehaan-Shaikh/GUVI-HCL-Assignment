@@ -1,31 +1,32 @@
 /*1. Collection Design (For understanding purpose)
-owners Collection : {owner_id: Number,
-                     name: String,
-                     phone: String}
 
-vehicles Collection : {vehicle_no: String,
-                       owner_id: Number,
-                       type: String}
+owners Collection : { owner_id : Number,
+                      name : String,
+                      phone : String}
 
-locations Collection : {loc_id: Number,
-                        area: String}
+vehicles Collection : { vehicle_no : String,
+                        owner_id : Number,
+                        type : String}
 
-violations Collection : {violation_id: Number,
-                         vehicle_no: String,
-                         type: String,
-                         timestamp: Date,
-                         loc_id: Number}
+locations Collection : { loc_id : Number,
+                         area : String}
 
-challans Collection : {challan_id: Number,
-                       violation_id: Number,
-                       vehicle_no: String,
-                       amount: Number,
-                       status: String}
+violations Collection : { violation_id : Number,
+                          vehicle_no : String,
+                          type : String,
+                          timestamp : Date,
+                          loc_id : Number}
 
-payments Collection : {payment_id: Number,
-                       challan_id: Number,
-                       amount: Number,
-                       date: Date}
+challans Collection : { challan_id : Number,
+                        violation_id : Number,
+                        vehicle_no : String,
+                        amount : Number,
+                        status : String}
+
+payments Collection : { payment_id : Number,
+                        challan_id : Number,
+                        amount : Number,
+                        date : Date}
 */
 
 //2. Insert Sample Data (Automatically Creates the Collections)
