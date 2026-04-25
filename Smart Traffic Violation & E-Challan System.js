@@ -1,37 +1,32 @@
-//1. Collection Design
-//owners Collection
-//{owner_id: Number,
-//  name: String,
-//  phone: String}
+/*1. Collection Design
+owners Collection : {owner_id: Number,
+                     name: String,
+                     phone: String}
 
-//vehicles Collection
-//{vehicle_no: String,
-//  owner_id: Number,
-//  type: String}
+vehicles Collection : {vehicle_no: String,
+                       owner_id: Number,
+                       type: String}
 
-//locations Collection
-//{loc_id: Number,
-//  area: String}
+locations Collection : {loc_id: Number,
+                        area: String}
 
-//violations Collection
-//{violation_id: Number,
-//  vehicle_no: String,
-//  type: String,
-//  timestamp: Date,
-//  loc_id: Number}
+violations Collection : {violation_id: Number,
+                         vehicle_no: String,
+                         type: String,
+                         timestamp: Date,
+                         loc_id: Number}
 
-//challans Collection
-//{challan_id: Number,
-//  violation_id: Number,
-//  vehicle_no: String,
-//  amount: Number,
-//  status: String}
+challans Collection : {challan_id: Number,
+                       violation_id: Number,
+                       vehicle_no: String,
+                       amount: Number,
+                       status: String}
 
-//payments Collection
-//{payment_id: Number,
-//  challan_id: Number,
-//  amount: Number,
-//  date: Date}
+payments Collection : {payment_id: Number,
+                       challan_id: Number,
+                       amount: Number,
+                       date: Date}
+*/
 
 //2. Insert Sample Data (Automatically Creates the Collections)
 use("trafficDB")
