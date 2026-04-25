@@ -1,4 +1,4 @@
-/*1. Collection Design
+/*1. Collection Design (For understanding purpose)
 owners Collection : {owner_id: Number,
                      name: String,
                      phone: String}
