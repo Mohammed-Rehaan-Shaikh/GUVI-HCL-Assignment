@@ -29,7 +29,6 @@ payments Collection : {payment_id: Number,
 */
 
 //2. Insert Sample Data (Automatically Creates the Collections)
-use("trafficDB")
 db.owners.insertMany([
   { owner_id: 1, name: "Rahul", phone: "9999999999" },
   { owner_id: 2, name: "Amit", phone: "8888888888" }
