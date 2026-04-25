@@ -1,5 +1,4 @@
 //1. Collection Design
-//
 //owners Collection
 //{owner_id: Number, name: String, phone: String}
 
