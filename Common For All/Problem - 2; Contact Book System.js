@@ -52,14 +52,14 @@ db.contacts.insertMany([
   }
 ])
 
-//Question 3: Retrieve all tasks where is_completed is false using find().
+//Question 3: Retrieve all contacts from "Mumbai" city using find().
 db.contacts.find({ city: "Mumbai" })
 
-//Question 4: Display only title and due_date using projection.
+//Question 4: Display only first_name, last_name, and phone using projection.
 db.contacts.find(
   { city: "Mumbai" },
   { first_name: 1, last_name: 1, phone: 1, _id: 0 }
 )
 
-//Question 5: Delete a task based on task_id.
+//Question 5: Delete a contact based on contact_id.
 db.contacts.deleteOne({ contact_id: 3 })
