@@ -56,12 +56,10 @@ db.services.find({
 })
 
 //Question 3: Update the status to "Completed" for all records where service_date is before "2025-01-01".
-db.services.find({
-  $and: [
-    { status: "InProgress" },
-    { service_date: { $lt: new Date("2026-08-01") } }
-  ]
-})
+db.services.updateMany(
+  { service_date: { $lt: new Date("2025-01-01") } },
+  { $set: { status: "Completed" } }
+)
 
 //Question 4: Delete all records with status "Completed" AND cost is less than ₹500.
 db.services.deleteMany({
@@ -78,3 +76,8 @@ db.services.deleteMany({
     { cost: { $lt: 500 } }
   ]
 })
+
+db.services.find(
+  {},
+  { customer_name: 1, service_type: 1, cost: 1, _id: 0 }
+).sort({ cost: -1 })

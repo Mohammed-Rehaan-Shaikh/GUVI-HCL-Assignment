@@ -58,7 +58,7 @@ db.subscriptions.find({
 //Question 3: Update the monthly_fee by increasing it by ₹100 for all Basic plan subscriptions.
 db.subscriptions.updateMany(
   { plan_type: "Basic" },
-  { $set: { monthly_fee: 299 } }
+  { $inc: { monthly_fee: 100 } }
 )
 
 //Question 4: Delete all subscriptions where is_active is false AND renewal_date is before "2025-01-01".
