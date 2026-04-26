@@ -66,12 +66,10 @@ db.readings.find({
 })
 
 //Question 3: Update the is_completed to true for all records where completion_date is not null.
-db.readings.find({
-  $and: [
-    { is_completed: false },
-    { pages_read: { $gt: 100 } }
-  ]
-})
+db.readings.updateMany(
+  { completion_date: { $ne: null } },
+  { $set: { is_completed: true } }
+)
 
 //Question 4: Delete all records where start_date is before "2023-01-01" AND is_completed is false.
 db.readings.deleteMany({
